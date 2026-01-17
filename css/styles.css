@@ -88,8 +88,10 @@ p {
 
 .header {
   border-bottom: 1px solid #e7e9fc;
-  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+  box-shadow:
+    0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
@@ -184,10 +186,8 @@ address {
 }
 
 .hero {
-  background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
+  background-image:
+    linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
     url(../images/hero_background.jpg);
   max-width: 1440px;
   background-repeat: no-repeat;
@@ -272,8 +272,10 @@ address {
 .team-list-item {
   width: 264px;
   border-radius: 0 0 4px 4px;
-  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
-    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  box-shadow:
+    0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16),
+    0 1px 6px 0 rgba(46, 47, 66, 0.08);
   background-color: #ffffff;
 }
 
@@ -339,8 +341,10 @@ address {
 
 .portfolio-list-item:hover,
 .portfolio-list-item:focus {
-  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
-    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  box-shadow:
+    0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16),
+    0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-card-container {
@@ -399,6 +403,10 @@ address {
   color: #f4f4fd;
 }
 
+.footer-social {
+  margin-right: 80px;
+}
+
 .social-media {
   font-weight: 500;
   color: #fff;
@@ -435,10 +443,6 @@ address {
 
 .footer-social-icon {
   fill: #f4f4fd;
-}
-
-.footer-subscribe {
-  margin-left: 80px;
 }
 
 .footer-subscribe-text {
@@ -521,7 +525,8 @@ address {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  transition:
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -543,7 +548,9 @@ address {
   border-radius: 4px;
   width: 408px;
   min-height: 584px;
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
+  box-shadow:
+    0 1px 1px 0 rgba(0, 0, 0, 0.14),
+    0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
   background-color: #fcfcfc;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -563,7 +570,8 @@ address {
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
   background-color: #e7e9fc;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  transition:
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -593,13 +601,17 @@ address {
 .modal-form {
   display: flex;
   flex-direction: column;
-  gap: 8px;
 }
 
 .modal-input-wrapper {
   display: flex;
   flex-direction: column;
   gap: 4px;
+  margin-bottom: 8px;
+}
+
+.modal-input-wrapper:nth-child(4) {
+  margin-bottom: 16px;
 }
 
 .modal-input {
@@ -609,7 +621,8 @@ address {
   border-radius: 4px;
   width: 360px;
   height: 40px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  transition:
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -651,10 +664,12 @@ address {
 }
 
 .modal-icon {
+  fill: #2e2f42;
   left: 16px;
   top: 50%;
   transform: translateY(-50%);
   position: absolute;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-checkbox {
@@ -679,7 +694,8 @@ address {
   border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   fill: transparent;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  transition:
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -688,8 +704,17 @@ address {
   background-color: #4d5ae5;
 }
 
+.checkbox-icon {
+  fill: transparent;
+  opacity: 0;
+  transition:
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .checkbox-input:checked + .checkbox .checkbox-icon {
   fill: #f4f4fd;
+  opacity: 1;
 }
 
 .checkbox-link {
